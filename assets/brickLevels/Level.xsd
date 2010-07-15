@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://c0x3y.com" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://c0x3y.com">
+
+    <complexType name="Brick">
+    	<sequence>
+    		<element name="Type" type="tns:BrickType"></element>
+    		<element name="ResourcePath" type="string"></element>
+    		<element name="Damage" type="int"></element>
+    		<element name="Column" type="int"></element>
+    		<element name="Row" type="int"></element>
+    	</sequence>
+    </complexType>
+    <simpleType name="BrickType">
+    	<restriction base="string">
+    		<enumeration value="Solid"></enumeration>
+    		<enumeration value="Level1"></enumeration>
+    		<enumeration value="Level2"></enumeration>
+    		<enumeration value="Level3"></enumeration>
+    		<enumeration value="Level4"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="Powerup">
+    	<sequence>
+    		<element name="Type" type="tns:PowerUpTypes"></element>
+    		<element name="ResourcePath" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+    <simpleType name="PowerUpTypes">
+    	<restriction base="string">
+    		<enumeration value="IncreasePaddleSize"></enumeration>
+    		<enumeration value="DecreasePaddleSize"></enumeration>
+    		<enumeration value="TwoBalls"></enumeration>
+    		<enumeration value="ThreeBalls"></enumeration>
+    		<enumeration value="BurningBall"></enumeration>
+    		<enumeration value="GluePaddle"></enumeration>
+    		<enumeration value="Guns"></enumeration>
+    	</restriction>
+    </simpleType>
+    <element name="map">
+	    <element name="MapName" type="string"></element>
+	    <element name="BrickList">
+		    <complexType>
+		    	<sequence type="="tns:Bricks"></sequence>
+		    </complexType>
+	    </element>
+	</element>
+</schema>
