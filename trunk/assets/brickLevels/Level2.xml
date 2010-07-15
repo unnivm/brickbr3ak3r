@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Map name="Level 1" xmlns:tns="http://c0x3y.com" >
+<Bricks>
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	<Brick Type="Blue">
+		<Row>4</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>6</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>7</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>8</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>9</Row>
+		<Column>1</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>2</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>2</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>2</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>3</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>3</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>3</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	
+	<Brick Type="Blue">
+		<Row>2</Row>
+		<Column>4</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>4</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>4</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>4</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>6</Row>
+		<Column>4</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+
+	<Brick Type="Blue">
+		<Row>2</Row>
+		<Column>5</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>5</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>5</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>5</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>6</Row>
+		<Column>5</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	
+	<Brick Type="Blue">
+		<Row>2</Row>
+		<Column>6</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>6</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>6</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>6</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>6</Row>
+		<Column>6</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	
+	<Brick Type="Blue">
+		<Row>2</Row>
+		<Column>7</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>7</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>7</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>7</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>6</Row>
+		<Column>7</Column>
+		<Type>NormalBrick</Type>
+	</Brick>			
+	
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>8</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>8</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>8</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>9</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Red">
+		<Row>4</Row>
+		<Column>9</Column>
+		<Type>NormalBrick</Type>
+	</Brick>		
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>9</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	
+	
+	<Brick Type="Blue">
+		<Row>3</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>
+	<Brick Type="Blue">
+		<Row>4</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>5</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>6</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>7</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>8</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>	
+	<Brick Type="Blue">
+		<Row>9</Row>
+		<Column>10</Column>
+		<Type>NormalBrick</Type>
+	</Brick>															
+</Bricks>
+</Map>
