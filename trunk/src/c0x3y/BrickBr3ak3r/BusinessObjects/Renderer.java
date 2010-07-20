@@ -54,8 +54,11 @@ public class Renderer {
 		}		
 		for(Sprite sprite : getSprites())	
 		{
-			sprite.Animate();
-			canvas.drawBitmap(sprite.getImage(), sprite.getxPos(),sprite.getyPos(), sprite.getPaint());
+			if (sprite.isVisible())
+			{
+				sprite.Animate();
+				canvas.drawBitmap(sprite.getImage(), sprite.getxPos(),sprite.getyPos(), sprite.getPaint());
+			}
 		}
 		for(DrawableText text : strings)
 		{
