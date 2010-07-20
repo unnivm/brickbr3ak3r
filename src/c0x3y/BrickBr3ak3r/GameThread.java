@@ -13,7 +13,7 @@ import c0x3y.BrickBr3ak3r.R;
 import c0x3y.Utils.Accelerometer;
 import c0x3y.Utils.Map;
 import c0x3y.Utils.MapBuilder;
-import c0x3y.Utils.PowerupListener;
+import c0x3y.Utils.IPowerupListener;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -90,31 +90,39 @@ public class GameThread extends Thread implements OnKeyListener, OnTouchListener
           else 
         	  accelerometer.registerListener();
     }
-
+	
 	public GameThread(final Context context, SurfaceHolder surfaceHolder, Handler handler, View view)
 	{
 		try {
 			display = ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
-			PowerupListener listener = new PowerupListener() {
-				
-				@Override
-				public void powerupActivated(Brick brick) {
-					// TODO Auto-generated method stub
-					
-				}
-			};
-			/*PowerupListener listener = new PowerupListener() {
+
+			IPowerupListener listener = new IPowerupListener() {
 				
 				@Override
 				public void powerupActivated(Brick brick) {
 					String ss = "some string";
+					Paddle tempPaddle = null;
+					int ballLocation = balls.get(0).collidables.indexOf(paddle);
+					int rendererLocation = renderer.getSprites().indexOf(paddle);
+					float left = paddle.getxPos();
 					switch (brick.getPowerUp().getPowerUpType())
 					{
 					case BurningBall:
 						ss = "burning ball";
 						break;
-					case DecreasePaddleSize:
-						ss = "decrease paddle size";
+					case DecreasePaddleSize:						
+						if (paddle instanceof LargePaddle)
+						{
+							tempPaddle = new NormalPaddle(context, display.getHeight() - 50, display.getWidth());
+						}
+						else
+						{
+							tempPaddle = new SmallPaddle(context, display.getHeight() - 50, display.getWidth());
+						}						
+						tempPaddle.setxPos(left);						
+						balls.get(0).collidables.set(ballLocation, tempPaddle);
+						renderer.getSprites().set(rendererLocation, tempPaddle);
+						paddle = tempPaddle;
 						break;
 					case GluePaddle:
 						ss = "glue paddle";
@@ -123,7 +131,21 @@ public class GameThread extends Thread implements OnKeyListener, OnTouchListener
 						ss = "guns";
 						break;
 					case IncreasePaddleSize:
-						ss = "increase paddle size";
+						if (!(paddle instanceof LargePaddle))
+						{												
+							if (paddle instanceof NormalPaddle)
+							{
+								tempPaddle = new LargePaddle(context, display.getHeight() - 50, display.getWidth());
+							}
+							else
+							{
+								tempPaddle = new NormalPaddle(context, display.getHeight() - 50, display.getWidth());
+							}						
+							tempPaddle.setxPos(left);						
+							balls.get(0).collidables.set(ballLocation, tempPaddle);
+							renderer.getSprites().set(rendererLocation, tempPaddle);
+							paddle = tempPaddle;
+						}
 						break;
 					case ThreeBalls:
 						ss = "3 balls";
@@ -138,12 +160,10 @@ public class GameThread extends Thread implements OnKeyListener, OnTouchListener
 						break;
 						default:
 							balls.add(new Ball(context, display.getHeight() - 50, display.getWidth()));
-							break;
-					
-					}
-					
+							break;				
+					}					
 				}
-			};*/
+			};
 			
 			accelerometer = new Accelerometer(context);
 			this.surfaceHolder = surfaceHolder;
@@ -164,7 +184,7 @@ public class GameThread extends Thread implements OnKeyListener, OnTouchListener
 				renderer.getSprites().add(b);				
 			}			
 			renderer.getSprites().add(balls.get(0));
-			paddle = new Paddle(context, display.getHeight() - 50, display.getWidth());			
+			paddle = new NormalPaddle(context, display.getHeight() - 50, display.getWidth());			
 			renderer.getSprites().add(paddle);
 			Background background = new Background(R.drawable.space, context);
 			renderer.setBackground(background);

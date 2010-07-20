@@ -1,6 +1,6 @@
 package c0x3y.BrickBr3ak3r.BusinessObjects;
 
-import c0x3y.Utils.PowerupListener;
+import c0x3y.Utils.IPowerupListener;
 import android.content.Context;
 
 public class Brick extends Sprite implements ICollidable {
@@ -8,12 +8,12 @@ public class Brick extends Sprite implements ICollidable {
 	private int Row;
 	private int Column;
 	private Powerup powerUp;
-	private PowerupListener powerupListener;
-	public PowerupListener getPowerupListener() {
+	private IPowerupListener powerupListener;
+	public IPowerupListener getPowerupListener() {
 		return powerupListener;
 	}
 
-	public void setPowerupListener(PowerupListener powerupListener) {
+	public void setPowerupListener(IPowerupListener powerupListener) {
 		this.powerupListener = powerupListener;
 	}
 

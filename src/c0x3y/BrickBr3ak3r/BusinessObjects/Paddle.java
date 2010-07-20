@@ -5,8 +5,8 @@ import android.content.Context;
 
 public class Paddle extends Sprite {
 
-	public Paddle(Context context, float parentHeight, float parentWidth) {
-		super(drawable.goldpaddle, context, parentHeight, parentWidth);
+	public Paddle(Context context, float parentHeight, float parentWidth, int drawableId) {
+		super(drawableId, context, parentHeight, parentWidth);
 		super.setyPos(parentHeight - getHeight());
 	}
 	
